@@ -1,4 +1,4 @@
-# dirtywave-m8 Flake
+# tytools Flake
 
 This Nix flake provides the `tytools` package from the `nixos-unstable` channel.
 
@@ -29,13 +29,13 @@ nix profile add .#tytools
 You can use this flake as an input in your own `flake.nix`:
 
 ```nix
-inputs.dirtywave-m8.url = "github:<your-username>/dirtywave-m8";
+inputs.tytools.url = "github:<your-username>/tytools";
 ```
 
 Then reference the package:
 
 ```nix
-packages.x86_64-linux.tytools = inputs.dirtywave-m8.packages.x86_64-linux.tytools;
+packages.x86_64-linux.tytools = inputs.tytools.packages.x86_64-linux.tytools;
 ```
 
 ## Notes
